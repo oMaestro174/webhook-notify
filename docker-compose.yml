@@ -1,0 +1,17 @@
+#version: '3.8'
+services:
+  webhook:
+    container_name: webhook-notify
+    build: .
+    ports:
+      - "5000:5000"
+    networks:
+      - kuma-net
+    volumes:
+      - ./:/app
+      - /var/run/docker.sock:/var/run/docker.sock
+
+networks:
+  kuma-net:
+    name: kuma-net
+    external: true
