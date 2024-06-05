@@ -66,4 +66,46 @@ Este projeto é um serviço web que monitora eventos e envia notificações para
         ]
     }
 }
+```
 
+# Uso
+## Inicializar o Servidor
+1. Inicie o servidor Flask:
+
+```bash
+python app.py
+```
+
+2. O servidor estará disponível em http://0.0.0.0:5000.
+
+# Endpoints
+- Slack: /webhook/slack/<channel>
+- Telegram: /webhook/telegram/<channel>
+- Email: /webhook/email
+
+Exemplko de payload
+
+```json
+{
+    "monitor": {
+        "name": "Nome do Monitor"
+    },
+    "heartbeat": {
+        "status": 1,
+        "localDateTime": "2023-05-26T12:34:56",
+        "timezone": "America/Sao_Paulo"
+    },
+    "msg": "Mensagem de teste"
+}
+
+```
+
+# Contribuição
+1. Faça um fork do projeto.
+2. Crie uma branch para sua feature (git checkout -b feature/fooBar).
+3. Faça commit das suas alterações (git commit -am 'Add some fooBar').
+4. Faça push para a branch (git push origin feature/fooBar).
+5. Crie um novo Pull Request.
+
+# Licença
+Distribuído sob a licença MIT. Veja LICENSE para mais informações.
