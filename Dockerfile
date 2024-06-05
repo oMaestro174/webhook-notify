@@ -15,9 +15,9 @@ COPY . .
 
 # Expõe a porta que a aplicação irá rodar
 EXPOSE 5000
-#EXPOSE 5001
+
 
 # Comando para rodar a aplicação
-#CMD ["python", "webhook_script_static.py"]
-CMD ["python", "webhook_script_dynamic.py"]
-#CMD ["python", "webteste_slack_restart.py"]
+
+CMD ["python", "webhook.py"]
+

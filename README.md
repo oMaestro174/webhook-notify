@@ -4,7 +4,7 @@ Este projeto é um serviço web que monitora eventos e envia notificações para
 
 ## Estrutura do Projeto
 
-- `app.py`: Arquivo principal contendo a lógica do Flask para receber webhooks, enviar notificações e reiniciar containers.
+- `webhook.py`: Arquivo principal contendo a lógica do Flask para receber webhooks, enviar notificações e reiniciar containers.
 - `config.json`: Arquivo de configuração contendo as informações dos canais (Slack, Telegram e e-mail).
 
 ## Pré-requisitos
@@ -73,7 +73,7 @@ Este projeto é um serviço web que monitora eventos e envia notificações para
 1. Inicie o servidor Flask:
 
 ```bash
-python app.py
+python webhook.py
 ```
 
 2. O servidor estará disponível em http://0.0.0.0:5000.
