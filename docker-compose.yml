@@ -6,12 +6,12 @@ services:
     ports:
       - "5000:5000"
     networks:
-      - kuma-net
+      - webhook-net
     volumes:
       - ./:/app
       - /var/run/docker.sock:/var/run/docker.sock
 
 networks:
   kuma-net:
-    name: kuma-net
+    name: webhook-net
     external: true
