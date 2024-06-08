@@ -1,16 +1,16 @@
 import os
 import json
 import requests
-import docker
+import docker # type: ignore
 import smtplib
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
-from flask import Flask, request, jsonify
+from flask import Flask, request, jsonify # type: ignore
 
 app = Flask(__name__)
 
 with open('config.json') as config_file:
-    config = json.load(config_file)
+    config = json.load(config_file) 
 
 def send_slack_notification(message, webhook_url):
     payload = {
