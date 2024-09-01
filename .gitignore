@@ -1,0 +1,18 @@
+#Ignore storage
+storage/
+
+# Ignore the .env file that contains environment variables
+.env
+
+# Ignore node_modules and log files (if relevant)
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Ignore Docker-related files (optional)
+*.log
+docker-compose.override.yml
+
+# Ignore Python cache
+__pycache__/
+*.py[cod]
