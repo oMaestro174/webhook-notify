@@ -1,23 +1,23 @@
 {
     "telegram": {
         "UpTimeKuma": {
-            "token": "7021232339:AAE5EZuHcdZQm1Ux780-bcPWTIPIIcD9WtA",
-            "chat_id": "1723744302"
+            "token": "1234567890:ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890",
+            "chat_id": "9876543210"
         }
     },
         
     "slack": {
-        "alertas": "https://hooks.slack.com/services/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",
-        "alertas-cetif": "https://hooks.slack.com/services/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"
+        "alertas": "https://hooks.slack.com/services/T00000000/B00000000/XXXXXXXXXXXXXXXXXXXXXXXX",
+        "alertas-cetif": "https://hooks.slack.com/services/T00000000/B00000000/YYYYYYYYYYYYYYYYYYYYYYYY"
     },
     "email": {
-        "smtp_server": "smtp.taguardado.net",
+        "smtp_server": "smtp.exemplo.com",
         "smtp_port": 587,
-        "smtp_user": "janei@taguardado.net",
-        "smtp_password": "J@web2019",
+        "smtp_user": "usuario@exemplo.com",
+        "smtp_password": "SenhaForte@2024",
         "recipients": [
-            "taguardado.net@gmail.com",
-            "janei.vieira@sefaz.rr.gov.br"
+            "exemplo1@gmail.com",
+            "exemplo2@dominio.com"
         ]
     }
 }
